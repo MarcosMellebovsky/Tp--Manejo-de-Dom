@@ -31,7 +31,7 @@ function ValidarLargoDeNotas() {
         document.getElementById('materia2').style.backgroundColor = "green";
     }
 
-    if (nota3 > 10 || nota3 < 1 || isNaN(nota2) == true) {
+    if (nota3 > 10 || nota3 < 1 || isNaN(nota3) == true) {
         document.getElementById('materia3').style.backgroundColor = "#f27961";
     }
     else{
