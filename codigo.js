@@ -17,25 +17,25 @@ function ValidarLargoDeNotas() {
     var nota1 =  document.getElementById('materia1').value;
     var nota2 =  document.getElementById('materia2').value;
     var nota3 =  document.getElementById('materia3').value;
-    if (nota1 > 10 || nota1 < 1) {
+    if (nota1 > 10 || nota1 < 1 || isNaN(nota1) == true) {
         document.getElementById('materia1').style.backgroundColor = "#f27961";
     }
     else{
         document.getElementById('materia1').style.backgroundColor = "green";
     }
 
-    if (nota2 > 10 || nota2 < 1) {
-        document.getElementById('materia2').style.color = "red";
+    if (nota2 > 10 || nota2 < 1 || isNaN(nota2) == true) {
+        document.getElementById('materia2').style.backgroundColor = "#f27961";
     }
     else{
-        document.getElementById('materia2').style.color = "green";
+        document.getElementById('materia2').style.backgroundColor = "green";
     }
 
-    if (nota3 > 10 || nota3 < 1) {
-        document.getElementById('materia3').style.color = "red";
+    if (nota3 > 10 || nota3 < 1 || isNaN(nota2) == true) {
+        document.getElementById('materia3').style.backgroundColor = "#f27961";
     }
     else{
-        document.getElementById('materia3').style.color = "green";
+        document.getElementById('materia3').style.backgroundColor = "green";
     }
     
 }
