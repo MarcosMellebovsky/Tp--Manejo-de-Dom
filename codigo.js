@@ -39,6 +39,7 @@ function ValidarLargoDeNotas() {
     }
     
 }
+//ss
 
 const PromedioNotas = () =>{
     if (!validar()) {
