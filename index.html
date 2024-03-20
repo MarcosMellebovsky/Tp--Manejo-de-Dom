@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="padre">
+       
+    <div class="form">
+
+        <div class="imgg" id="imagenes">
+            <img id="imagenResultado" src="bienvenida.gif" alt="Bienvenida">
+        </div>
+        <label for="">Nota de Matematica:</label>
+        <input class="input-class" id="materia1" onkeyup="ValidarLargoDeNotas()" type="text" placeholder="ingrese la nota aqui">
+        <label for="">Nota de Lengua:</label>
+        <input class="input-class"id="materia2" onkeyup="ValidarLargoDeNotas()" type="text" placeholder="ingrese la nota aqui">
+        <label for="">Nota de EFSI:</label>
+        <input class="input-class"id="materia3"  onkeyup="ValidarLargoDeNotas()"  type="text" placeholder="ingrese la nota aqui">
+
+        <div class="btns">
+        <button class="btn" id="promedio" onclick="PromedioNotas()" onclick="validar()">Calcular promedio</button>
+        <button class="btn"id="mejorMateria" onclick="MejorMateria()" onclick="validar()">Mejor materia </button>
+        </div>
+
+        <div class="divs">
+
+        <div id="resultadoObtenido"></div>
+        <div id="resultadoObtenido2"> </div>
+
+        </div>
+        
+    
+    </div>
+
+    </div>
+
+    <script src="./codigo.js"></script>
+</body>
+</html>
+
