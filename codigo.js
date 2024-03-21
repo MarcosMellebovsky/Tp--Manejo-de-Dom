@@ -10,6 +10,7 @@ const validar = () =>{
 
     if (nota1 === '' || nota2 === '' || nota3 === '') {
         alert('Por favor, completa todas las notas antes de continuar.');
+
     }
 }
 
@@ -21,21 +22,21 @@ function ValidarLargoDeNotas() {
         document.getElementById('materia1').style.backgroundColor = "#f27961";
     }
     else{
-        document.getElementById('materia1').style.backgroundColor = "green";
+        document.getElementById('materia1').style.backgroundColor = "#80ed99";
     }
 
     if (nota2 > 10 || nota2 < 1 || isNaN(nota2) == true) {
         document.getElementById('materia2').style.backgroundColor = "#f27961";
     }
     else{
-        document.getElementById('materia2').style.backgroundColor = "green";
+        document.getElementById('materia2').style.backgroundColor = "#80ed99";
     }
 
     if (nota3 > 10 || nota3 < 1 || isNaN(nota3) == true) {
         document.getElementById('materia3').style.backgroundColor = "#f27961";
     }
     else{
-        document.getElementById('materia3').style.backgroundColor = "green";
+        document.getElementById('materia3').style.backgroundColor = "#80ed99";
     }
     
 }
