@@ -4,13 +4,12 @@ var imagen = document.getElementById('imagenes');
 
 const validar = () =>{
 
-    var nota1 = document.getElementById('materia1').value.trim();
-    var nota2 = document.getElementById('materia2').value.trim();
-    var nota3 = document.getElementById('materia3').value.trim();
+    var nota1 = document.getElementById('materia1').value;
+    var nota2 = document.getElementById('materia2').value;
+    var nota3 = document.getElementById('materia3').value;
 
     if (nota1 === '' || nota2 === '' || nota3 === '') {
         alert('Por favor, completa todas las notas antes de continuar.');
-
     }
 }
 
@@ -40,7 +39,6 @@ function ValidarLargoDeNotas() {
     }
     
 }
-//ss
 
 const PromedioNotas = () =>{
     if (!validar()) {
@@ -104,14 +102,9 @@ const MejorMateria = () => {
     }
 
     document.getElementById('resultadoObtenido2').innerText = mensaje;
-
-   
- 
 }
+
 const ImagenCambiante = () => {
     
-    
-        img.src = 'aplausosemoji.gif';
-    
-    
+    img.src = 'aplausosemoji.gif';
 }
